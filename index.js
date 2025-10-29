@@ -16,7 +16,9 @@ app.get('/', (req, res) => {
 app.get('/kaushik', (req, res) => {
   res.send('Hello Kaushik! i am calling get This is your backend server.')
 })
-
+app.get('/home', (req, res) => {
+  res.send('This is home page of backend server.')
+}
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
